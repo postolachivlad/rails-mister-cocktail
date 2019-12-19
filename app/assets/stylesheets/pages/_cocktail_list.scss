@@ -1,0 +1,40 @@
+.list-container {
+  width: 500px;
+  margin: 0 auto;
+}
+.cocktail-list {
+  overflow-y: scroll;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Josefin Slab', serif;
+
+    li {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-bottom: 1px gray solid;
+      a {
+        padding-right: 50px;
+        color:  #fff;
+        text-decoration: none;
+        transition: 0.4s;
+      }
+      span {
+        color: #fff;
+        transition: 0.4s;
+      }
+    }
+    li:hover {
+      a{
+        color: #b9b4b4;
+      }
+      span {
+        color: #b9b4b4;
+      }
+    }
+}

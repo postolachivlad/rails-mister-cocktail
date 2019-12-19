@@ -1,0 +1,39 @@
+
+<div class="main-info">
+  <div class="photo">
+    <h2 class="header"><%= @cocktail.name %></h2>
+    <img src="https://images.unsplash.com/photo-1506802913710-40e2e66339c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+  </div>
+  <div class="info-box">
+    <div class="price-box">
+      <p class="price">Price:$25</p>
+    </div>
+    <div class="price-box">
+      <p>Portion Size</p>
+      <p class="portion">300ml</p>
+    </div>
+    <div class="">
+      <%= link_to "Delete", root_path, class: 'delete' %>
+    </div>
+
+  </div>
+</div>
+<div class="ingredients">
+  <h2 class="header">Ingredients</h2>
+  <%= link_to "Add Ingredients", new_cocktail_dose_path(@cocktail),  class: 'btn-create-dose' %>
+  <div class="ingredient-list">
+    <% if @doses.exists? %>
+      <% @doses.each do |dose|%>
+        <% @ingredient = Ingredient.where(id: dose.ingredient_id) %>
+        <div class="ingredient-el">
+          <p><%= @ingredient[0].name %></p>
+          <p><%= dose.description %></p>
+          <%= link_to 'Delete Dose', dose_path(dose), method: :delete %>
+        </div>
+      <% end %>
+    <% else %>
+      <p>No doses any doses and ingrediesnts yet</p>
+    <% end %>
+  </div>
+</div>
+

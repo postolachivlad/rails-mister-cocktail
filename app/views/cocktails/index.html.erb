@@ -1,0 +1,9 @@
+<div class="list-container">
+  <ul class="cocktail-list">
+    <% @cocktails.each do |el|%>
+      <li >
+        <%= link_to "#{el.name}",  cocktail_path(el) %> <span>$99</span>
+      </li>
+    <% end %>
+  </ul>
+</div>

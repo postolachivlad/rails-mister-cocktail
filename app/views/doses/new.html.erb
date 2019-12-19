@@ -1,0 +1,10 @@
+<h2>
+  <%= @cocktail.name %>
+</h2>
+
+<%= simple_form_for (@dose), url: (cocktail_doses_path) do |f|%>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit "click" %>
+<% end %>
+

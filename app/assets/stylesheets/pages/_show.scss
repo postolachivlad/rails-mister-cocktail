@@ -1,0 +1,91 @@
+.main-info {
+margin-top: 75px;
+padding-bottom: 25px;
+background-color: rgba(255,255,255,0.5);
+display: flex;
+}
+.photo {
+  text-align: left;
+  padding-right: 50px;
+  border-right: 2px #d2c6c63b solid;
+  img {
+    padding-left: 25px;
+    height: 450px;
+    width: 700px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.header{
+    font-size: 35px;
+    padding: 25px;
+    color: #5b5656;
+  }
+.info-box {
+  width: 100%
+}
+.price-box {
+  margin: 25px;
+  border-bottom: 2px #d2c6c63b solid;
+  text-align: left;
+  font-size: 30px;
+  color: #5b5656;
+}
+.portion {
+  font-size: 20px;
+}
+.delete {
+  margin: 25px;
+  padding: 10px 55px;
+  border: 1px #d2c6c63b solid;
+  font-size: 30px;
+  color: #5b5656;
+  text-decoration: none;
+  transition: 0.4s;
+  display: block;
+}
+.delete:hover{
+  background-color: #5b5656;
+  color: #fff;
+  text-decoration: none;
+}
+.no-border {
+  border-bottom: none;
+}
+.ingredients {
+  margin: 75px 0 0 0;
+  background-color: rgba(255,255,255,0.5);
+  text-align: left;
+  padding-bottom: 20px;
+}
+.btn-create-dose {
+  margin-left: 25px;
+  padding: 10px 25px;
+  border: 1px #d2c6c63b solid;
+  font-size: 20px;
+  color: #5b5656;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.btn-create-dose:hover {
+  background-color: #5b5656;
+  color: #fff;
+  text-decoration: none;
+}
+.ingredient-list {
+  margin: 25px 25px 0 25px;
+}
+.ingredient-el {
+  display: flex;
+  padding-bottom: 1px;
+  border-bottom: 1px #6f6565 solid;
+  color: #5b5656;
+  p {
+    padding: 0 20px 0 0;
+    margin-bottom: 0;
+  }
+  a{
+    padding:0;
+    margin-bottom: 0;
+  }
+}

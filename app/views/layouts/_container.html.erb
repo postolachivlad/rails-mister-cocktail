@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="my-container">
+    <div class="nav-bar">
+      <%= link_to root_path  do %>
+        <%= image_tag "invert-logo.png" %>
+      <% end %>
+      <div class="navigation">
+
+          <%= link_to "Home", root_path %>
+          <%= link_to "Cocktails",  cocktails_path%>
+          <%= link_to "Create Cocktail",  new_cocktail_path%>
+
+      </div>
+    </div>
