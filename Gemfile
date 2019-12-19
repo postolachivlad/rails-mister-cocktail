@@ -64,5 +64,5 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 
 gem 'webpacker', '~> 4.x'
-
+gem 'dotenv-rails', groups: [:development, :test]
 
